@@ -1,0 +1,9 @@
+# Ignorar archivos generados por LaTeX
+*.aux
+*.log
+*.out
+*synctex.gz
+
+# Ignorar PDFs compilados
+*.pdf
+# Esta regla esta en evaluación...

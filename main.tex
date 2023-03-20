@@ -1,0 +1,37 @@
+\documentclass{article}
+
+% Paquetes varios
+\usepackage[spanish]{babel}                 % Soporte de idioma español
+\usepackage{fullpage}                       % Usar la pagina completa
+\usepackage{subfiles}                       % Soporte para modularizar el proyecto (usar multiples .tex)
+\usepackage{tikz}                           % Dibujo dentro de LaTeX
+\usepackage[bookmarksopen = true]{hyperref} % Para añadir enlaces y referencias dentro del documento
+\usepackage{xcolor}                          % Soporte de colores
+
+% Paquetes matemáticos
+\usepackage{amsmath}  % Diversos ambientes matemáticos (como gather, split, align, etc) muy utiles
+\usepackage{amssymb}  % Simbolos matemáticos extra
+\usepackage{mathbbol} % Algunos simbolos matemáticos especiales
+
+% Paquetes y librerias de tikz
+\usetikzlibrary{positioning} % Para posicionamiento relativo
+
+\begin{document}
+
+\begin{center}
+  \LARGE
+  \textbf{Optimización (ICS1113)}
+  \normalsize\\
+  Resumen general del curso\\
+  Andrés Cabezas
+\end{center}
+
+% Inicio de secciones modularizadas
+% Todos los archivos se encuentran en la carpeta "./sections/"
+% y se encuentran numerados en el orden en que deberían aparecer
+% en el documento.
+\subfile{sections/1_motivacion.tex}
+
+\subfile{sections/2_prog_lin.tex}
+
+\end{document}

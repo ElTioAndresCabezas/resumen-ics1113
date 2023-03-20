@@ -1,0 +1,34 @@
+\documentclass[../main.tex]{subfiles}
+
+\begin{document}
+\section{Acerca de la Optimización}
+
+La optimización consiste en realizar la mejor decisión posible para resolver un determinado problema, generalmente maximizando o minimizando una función objetivo, siguiendo ciertas restricciones o reglas.
+
+Los problemas de optimización los podemos encontrar en todas partes, desde el mundo de la economía (por ejemplo, decidir en que invertir para usar dinero de la mejor forma), al mundo de la computación (tratar de hacer una tarea en un computador, de la forma más rapida posible, con recursos que son limitados).
+
+\subsection{Modelo de Optimización}
+Un modelo de optimización consiste en una representación matemática de la realidad, útil para entender de mejor manera un sistema. Este modelo nos ayudará a poder tomar la mejor decisión posible en base a la información que tengamos.
+
+\subsubsection{Composición de un modelo de optimización}
+Todo modelo de optimización se compone de los siguientes elementos
+\begin{itemize}
+  \item Variables de decisión: Consiste en las variables en las cuales se va a tomar una decisión final al respecto para poder lograr nuestro objetivo. Ejemplo: \textit{Cantidad de personas} $\rightarrow x$
+  \item Función objetivo: Representación matemática (una función) que muestra los efectos que tienen las variables de decisión sobre el resultado final. Ejemplo: \textit{La densidad de personas en una cierta area} $\rightarrow f(x)$
+  \item Restricciones del problema: Son las diversas reglas que nuestras variables de decisión deberán seguir para poder entregar una solución valida al problema inicial. Ejemplo: \textit{El aforo máximo permitido en la sala es de $k$ personas} $\rightarrow x \leq k$
+  \item Naturaleza de las variables de decisión: Son las reglas que nuestras variables de decisión tienen, pero que no están impuestas por nosostros, sino que ocurren debido a la naturaleza del problema. Ejemplo: \textit{La cantidad de personas siempre tendrá que ser positiva y entera} $\rightarrow x \in \mathbb{Z}^+_0$
+\end{itemize}
+
+Así, por ejemplo, un problema de optimización se podría ver de la siguiente forma:
+\[
+  \boxed{
+    \begin{gathered}
+      \min(f(x))\\
+      s.a.\\
+      x \leq k\\
+      x \in \mathbb{Z}^+_0
+    \end{gathered}
+  }
+\]
+
+\end{document}
